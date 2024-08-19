@@ -3,7 +3,7 @@
 Aplicação para gerênciamento de estacionamento, gerenciando a entrada e saída de veículos e informando o valor a ser pago ao final com base em uma tabela de preços.
 
 Este repositório compreende apenas o front-end do projeto, feito com em Vue 3 + Bootstrap.
-Para acessar o back-end, por favor, vá para a aba 
+Para acessar o back-end, por favor, acesse o link [https://github.com/cunhanai/ParkingBackend](https://github.com/cunhanai/ParkingBackend).
 
 ## IDE Setup Recomendado
 
