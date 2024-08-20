@@ -4,13 +4,13 @@ Aplicação para gerenciamento de estacionamento, gerenciando a entrada e saída
 
 Este repositório compreende apenas o front-end do projeto, feito com em Vue 3 + Bootstrap. Para acessar o back-end, por favor, acesse o link [https://github.com/cunhanai/ParkingBackend](https://github.com/cunhanai/ParkingBackend).
 
-## IDE Setup Recomendado
+## Tecnologias utilizadas
 
 - **Linguagens:** HTML + CSS + JavaScript
 - **Framework:** VueJS 3 + Bootstrap
 - **IDE:** Visual Studio Code
 
-## Project Setup
+## Setup
 
 ### Configurando os pacotes
 
