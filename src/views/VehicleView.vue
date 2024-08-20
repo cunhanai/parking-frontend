@@ -3,19 +3,17 @@
     <div class="d-flex justify-content-between mb-5">
       <h1>Entrada e saída de veículos</h1>
 
-      <BButton @click="showError('d')">Clock</BButton>
-
       <div>
         <BButton
           style="margin-right: 1rem"
           variant="outline-info"
-          @click="configModal(true)"
+          @click="openModal(true)"
         >
           Marcar entrada
         </BButton>
         <BButton
           variant="outline-danger"
-          @click="configModal(false)"
+          @click="openModal(false)"
         >
           Marcar saída
         </BButton>
@@ -154,12 +152,9 @@
       this.getItems()
     },
     methods: {
-      useToastError(toast) {
-        toast('ee')
-      },
       async getItems() {
         try {
-          this.items = await api.getItems()
+          this.items = await api.getParkingItems()
         } catch (err) {
           this.showError(err)
         }
@@ -178,7 +173,7 @@
         await this.getItems()
         this.hideModal(props)
       },
-      configModal(isEntrada) {
+      openModal(isEntrada) {
         this.form.date = moment().format('DD/MM/YYYY HH:mm:ss')
         this.isEntrada = isEntrada
         this.modal = true
@@ -186,6 +181,7 @@
       hideModal(props) {
         this.form.plate = ''
         this.form.date = ''
+        this.modal = false
         props.hide()
       },
       getActionType() {
@@ -195,7 +191,7 @@
         const line = { ...event }
 
         if (line.departureDate == '-') {
-          this.configModal(false)
+          this.openModal(false)
         }
       }
     }

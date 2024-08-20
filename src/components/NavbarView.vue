@@ -15,7 +15,7 @@
         id="nav-collapse"
         is-nav
       >
-        <BNavbarNav>
+        <BNavbarNav class="ms-auto mb-2 mb-lg-0">
           <BNavItem>
             <RouterLink to="/">Veículos</RouterLink>
           </BNavItem>
@@ -23,19 +23,6 @@
             <RouterLink to="/pricing">Precificação</RouterLink>
           </BNavItem>
         </BNavbarNav>
-        <!-- Right aligned nav items -->
-        <BNavbarNav class="ms-auto mb-2 mb-lg-0"> </BNavbarNav>
-        <BNavForm class="d-flex">
-          <BFormInput
-            class="me-2"
-            placeholder="Buscar veículo"
-          />
-          <BButton
-            type="submit"
-            variant="outline-info"
-            >Buscar</BButton
-          >
-        </BNavForm>
       </BCollapse>
     </BNavbar>
   </header>

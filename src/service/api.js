@@ -1,7 +1,7 @@
 const URL_BASE = 'http://localhost:5124'
 
 export default {
-  async getItems() {
+  async getParkingItems() {
     return await this.get(`${URL_BASE}/parking`)
   },
 
@@ -10,7 +10,15 @@ export default {
   },
 
   async sendVehicleDeparture(body) {
-    return this.post(`${URL_BASE}/parking/departure`, body)
+    return await this.post(`${URL_BASE}/parking/departure`, body)
+  },
+
+  async getPricingItems() {
+    return await this.get(`${URL_BASE}/pricing`)
+  },
+
+  async sendPricing(body) {
+    return await this.post(`${URL_BASE}/pricing`, body)
   },
 
   async get(url) {
