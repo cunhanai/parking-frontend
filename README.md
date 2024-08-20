@@ -12,7 +12,11 @@ Este repositório compreende apenas o front-end do projeto, feito com em Vue 3 +
 
 ## Setup
 
-### Configurando os pacotes
+### Alterando endpoint de acesso ao back-end
+
+Atualmente o endpoint do backend está apontando para a porta <code>http://localhost:5124</code>, se a sua porta for diferente, por favor, altere a propriedade <code>URL_BASE</code> no arquivo <code>src\service\api.js</code> para a porta que seu backend está utilizando.
+
+### Instalando os pacotes
 
 ```sh
 npm install
@@ -23,9 +27,4 @@ npm install
 ```sh
 npm run dev
 ```
-
-## Alterando endpoint de acesso ao back-end
-
-Atualmente o endpoint do backend está apontando para a porta <code>http://localhost:5124</code>, se a sua porta for diferente, por favor, altere a propriedade <code>URL_BASE</code> no arquivo <code>src\service\api.js</code> para a porta que seu backend está utilizando.
-
 
